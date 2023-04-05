@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" id="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 	
@@ -50,16 +50,17 @@
   
       </div>
     </div>
+    <div class="me"><p>
+      i'm 20 years old, i live in Colombia, on armenia city and i'm very
+      excited about my future as enginieer, my dream is become to a senior
+      developer and maybe design a game, i think that could be a great
+      experience for me because i love video games and and i like programming.
+    </p>
+    </div>
 
     <div id="Second">
-      <p>
-        i'm 20 years old, i live in Colombia, on armenia city and i'm very
-        excited about my future as enginieer, my dream is become to a senior
-        developer and maybe design a game, i think that could be a great
-        experience for me because i love video games and and i like programming.
-      </p>
-
-      <div class="intro">
+      
+      
         <div class="Description">
           <p>
             This is my city, we're consider the "eje cafetero", in english we
@@ -69,43 +70,47 @@
           </p>
         </div>
         <div class="armenia">
-        <img src="/imgs/YoAmoArmenia.jpg" />
-        <img src="/imgs/jeep.jpg" />
-        <img src="/imgs/CafeQuindio.jpg" />
+         <img src="/imgs/YoAmoArmenia.jpg" />
+          <img src="/imgs/Willys.avif" />
+          <img src="/imgs/CafeQuindio.jpg" />
+          <img src="/imgs/armenia.jpg" />
+
         </div>
-      </div>
+      
     </div>
 
-
+    <div class="skills">
     <p>
       This project was made to practice my skills with HTML, CSS and
       JavaScript, you can find here, images, buttoms, links and so on.
     </p>
+    </div>
     <div class="examples">
       
       <div id="examp">
-        <form id="check" class="examp">
-          <p>This is a checbox list</p>
+          <p>This is a checbox list that change the css of this div.</p>
           
-          <input type="radio" id="radio1" name="radio" value="myValue" />
-          <label for="radio1">This is a checkbox</label>
+          <input type="radio" id="radio1" name="radio" value="Option1" />
+          <label for="radio1">Organge option</label>
           <br>
-          <input type="radio" id="radio2" name="radio" value="myValue2" />
-          <label for="radio2">  This is a checkbox </label>
+          <input type="radio" id="option2" name="radio" value="Option2" />
+          <label for="radio2">  Red option </label>
           <br>
-          <input type="radio" id="radio3" name="radio" value="myValue3" />
-          <label for="radio3">This is a checkbox </label>
-        </form>
+          <input type="radio" id="radio3" name="radio" value="Option3" />
+          <label for="radio3">White option </label>
+        
+        
       </div>
 
 
       
       <div id="examp2">
-        <button>First buttom</button>
+        <p>Here you'll find a list of buttons, if you make click in any button, it will change its style.</p>
+        <button id="buttom">Shadow button</button>
         <br>
-        <button>Second buttom</button>
+        <button id="buttom2">Comic button</button>
         <br>
-        <button>Third buttom</button>
+        <button id="buttom3">spacing button</button>
       </div>
 
 
@@ -115,22 +120,23 @@
           <p>This is a checbox list</p>
           <br>
           
-          <input type="checkbox" id="checkbox1" name="checbox1" />
-          <label for="checkbox1">This is a checkbox</label>
+          <input type="checkbox" id="checkbox1" name="checkbox1" checked disabled/>
+          <label for="checkbox1" class="labelChk">This checkbox put the HTML code</label>
           <br>
-          <input type="checkbox" id="checkbox2" name="checbox2"  />
-          <label for="checkbox2">  This is a checkbox </label>
+          <input type="checkbox" id="checkbox2" name="checkbox2" checked />
+          <label for="checkbox2" class="labelChk">  This checkbox turns css on or off </label>
           <br>
-          <input type="checkbox" id="checkbox3" name="checbox3" />
-          <label for="checkbox3">This is a checkbox </label>
+          <input type="checkbox" id="checkbox3" name="checkbox3" />
+          <label for="checkbox3" class="labelChk">This checkbox is just for see how looks like when you make click</label>
+
           
       </div>
     </div>
 
-    <div>
+    <div id="last">
 
       <p>I hope you enjoy reading this blog and i'll waiting for you'r opinion 
-        and i'll happy if you give some feedback to improve my blog, thanks and good bye
+        and i'll happy if you give some feedback to improve my blog, thanks and good bye.
       </p>
       <img src="/imgs/RobotSatingBye.png">
 
@@ -138,9 +144,10 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="JavaScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"  ></script>
+    <script src="JavaScript.js" ></script>
     
 	
+    
   </body>
 </html>
