@@ -1,0 +1,386 @@
+/* Css header*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'comic sans ms';
+}
+
+header{
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-size: 25px;
+    background: #27282c;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content:center;
+    min-height: 100hv;;
+}
+header a{
+
+    position: relative;
+    background: #e4bc38;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 0.8em;
+    letter-spacing:0.1em;
+    font-weight: 400;
+    padding:10px 30px;
+    transition:0.5s;
+
+
+}
+
+header a:hover{
+background: var(--clr);
+color: var(--clr);
+letter-spacing: 0.25em;
+box-shadow: 0 0 35px var(--clr);
+
+}
+header a::before{
+    content:'';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+header a span{
+    position: relative;
+    z-index: 1;
+}
+
+header a l{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+header a l::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translate(-50%) shewX(325deg);
+    transition: 0.5s;
+}
+
+header a:hover l::before{
+
+    width: 20px;
+    left: 20%;
+
+}
+
+header a l::after{
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translate(-50%) shewX(325deg);
+    transition: 0.5s;
+
+}
+header a:hover l::after{
+
+    width: 20px;
+    left: 80%;
+
+}
+/*end of header´s css */
+
+.Tittle{
+font-size:20px;
+text-align: center;
+border-color: #27282c;
+border: 15px solid #27282c;
+}
+.Tittle img{
+    width: 300px;
+    height: 100%;
+
+}
+/*this code change de buttoms color of the carousel*/
+.img-Poli .slick-prev::before,
+.img-Poli .slick-next::before {
+  color: #e4bc38;
+  opacity: 0.3;
+}
+.img-Poli .slick-prev:hover,
+.img-Poli .slick-next:hover {
+color: aqua;
+}
+
+div{
+
+    padding: 20px;
+    
+   
+}
+
+#First{
+   
+    padding: 20px;
+    border: 15px solid #27282c;
+    
+}
+
+.img-Poli{
+    
+    text-align: center;
+    border-color: aqua;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+div img{
+
+   height: 350px;
+   width: 350px;
+   
+}
+
+.me{
+    padding: 20px;
+    border-right: 15px solid #27282c;
+    border-left: 15px solid #27282c;
+
+}
+#Second{
+
+    padding: 20px;
+    border: 15px solid #27282c;
+    border-top:none ;
+    text-align: center;
+    display: flex;
+    
+   
+}
+
+
+
+.armenia{
+    width: 80%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.armenia .slick-prev::before,
+.armenia .slick-next::before {
+  color: #e4bc38; 
+  opacity: 0.3;
+}
+.armenia .slick-prev:hover,
+.armenia .slick-next:hover {
+color: aqua;
+}
+
+
+
+
+ .Description{
+    text-align: left;
+    width: 300px;
+
+
+ }
+
+.skills{
+    padding: 20px;
+    border: 15px solid #27282c;
+    border-bottom: none;
+    
+
+}
+
+.examples{
+    padding: 20px;
+    border: 15px solid #27282c;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+input[type="radio"]{
+    margin-top: 20px;
+}
+
+
+label input[type="radio"]{
+
+    display:block;
+    
+ }
+ 
+
+ #examp, #examp2, #examp3{
+
+    height:250px;
+    width: 400px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.555);
+ }
+ 
+#examp2 {
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+
+}
+button{
+    margin: 5px;
+    
+}
+
+ button.change1 {
+    --glow-color: goldenrod;
+    --glow-spread-color: rgb(83, 63, 12);
+    --btn-color: #27282c;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 10px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+button.change1::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 10%;
+    width: 10%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em)  scale(1, .6);
+}
+button.change1:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+
+button.change2 {
+    padding: 0.1em 1em;
+    border: 4px solid goldenrod;
+    transition: ease-in-out 0.3s;
+    background-color: transparent;
+    color: goldenrod;
+    font-weight: bolder;
+    font-size: 16px;
+   }
+   
+   button.change2:hover {
+    transform: scale(1.2) rotate(10deg);
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 2px 5px 20px black;
+   }
+
+
+#buttom3.change3{
+    background-color: transparent;
+    border: transparent;
+    font-size: 16px;
+    content: "";
+    transform-origin: center;
+    transition: 0.5s;
+    border: 1px  solid #0000005e;    
+}
+#buttom3.change3:hover{
+    
+    
+    transform:perspective(4em) scale(0.95);
+    transition: 1s;
+    box-shadow: inset 2px 3px 4px  black;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    color: goldenrod;
+    border: 0.5px solid #00000000;
+    /*this part make the letter spacing when  put the mouse inside the button*/
+    animation:tracking-out-expand-forward-top 0.5s linear both;
+    transform:translateZ(0) translateY(0);
+    opacity:1 60%;
+    opacity:.8 100%;
+    letter-spacing:0.8em;
+}
+
+
+#last{
+    padding: 20px;
+    border-right: 15px solid #27282c;
+    border-left: 15px solid #27282c;
+    border-bottom: 15px solid #27282c;
+    
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    place-content: center;
+    border: 1px solid #27282c;
+    border-radius: 5px;
+    width: 1.5em;
+    height: 1.5em;
+    display: grid;
+    place-content: center;
+    
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    transform: scale(0);
+    transition: 300ms transform ease-in-out;
+    box-shadow: inset 1em 1em goldenrod;
+    transform-origin: center;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    
+
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  
+  .labelChk{
+    font-size:16px;
+    line-height: 1.1;
+    display: inline-block;
+    margin-top: 10px;
+
+  }
+
+  input[type="checkbox"]:disabled {
+  
+    box-shadow: inset 1px 1px 10px 10px grey;
+    cursor: not-allowed;
+  }
