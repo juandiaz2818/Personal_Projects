@@ -4,7 +4,7 @@
 
 /*fondo de pantalla*/
 body{
-    background-color: gray;
+    background-color: rgba(137, 43, 226, 0.418);
     color: #ffffff;
     font-family: cursive;
     display: flex;
