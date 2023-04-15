@@ -1,0 +1,64 @@
+.hidden{
+    color: transparent;
+}
+
+/*fondo de pantalla*/
+body{
+    background-color: gray;
+    color: #ffffff;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body h1{
+    text-shadow: 6px 6px 6px blueviolet,
+    3px 3px 4px brown;
+    cursor: grab;
+
+}
+#wordContainer{
+    margin: top 40px;
+
+}
+
+.letter{
+    margin: 0 7px;
+    position: relative;
+    text-align: center;
+
+}
+
+.letter::after{
+   content: " ";
+   display: block;
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height:1px;
+   background-color: azure;
+   min-width: 12px;
+}
+
+#startButton{
+    margin: 20px;
+    appearance: none;
+    box-shadow: 20px 20px 50px 10px blueviolet inset, 
+    20px 20px 50px 15px rgb(255, 255, 255) ;
+    width: 300px;
+    padding: 20px;
+    background-color: brown;
+    color: white;
+    font-weight: 60px;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor:grab;
+    font-family: cursive;
+    border: none;
+}
+#startButton:hover{
+    transition: 2s;
+    transform: scale(1.2,1.2);
+    
+}
